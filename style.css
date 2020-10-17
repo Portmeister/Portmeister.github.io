@@ -1,0 +1,44 @@
+body {
+    background-color: darkgray;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 100%
+    padding: 10px 20px;
+}
+
+header h1 {
+    background-color: lightblue;
+    width: 22%;
+    padding-right: 2%;
+    margin-left: 20px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 400px;
+}
+
+nav li {
+    display: inline-block;
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 2%;
+    margin-left: 25px;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+}
