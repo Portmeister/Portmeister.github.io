@@ -5,40 +5,39 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    height: 80px;
+    height: 300px;
     width: 100%
     padding: 10px 20px;
 }
 
 header h1 {
     background-color: lightblue;
-    width: 22%;
+    width: 20%;
     padding-right: 2%;
-    margin-left: 20px;
+    margin: 30px 20px;
+    font-size: 32px;
     text-align: right;
 }
 
-nav ul {
+header ul {
     list-style-type: none;
-    margin-left: 400px;
+    margin-top: 20px;
 }
 
-nav li {
+header li {
     display: inline-block;
     color: lightblue;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     padding-top: 2%;
     margin-left: 25px;
 }
 
-nav li:hover {
+header li:hover {
     text-decoration: underline;
 }
 
-section {
-    display: flex;
-    overflow: hidden;
+header img {
     height: 200px;
     width: 100%;
 }
