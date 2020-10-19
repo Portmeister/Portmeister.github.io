@@ -14,9 +14,24 @@ header h1 {
     background-color: lightblue;
     width: 22%;
     padding-right: 2%;
-    margin: 30px 20px;
-    font-size: 32px;
+    margin: 30px 5px 30px 25px;
+    font-size: 38px;
+    font-weight: bold;
     text-align: right;
+}
+
+header h2 {
+    position: relative;
+    top: 200px;
+    left:450px;
+    background-color: lightblue;
+    width: 22%;
+    padding-right: 2%;
+    margin: 30px 70px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1
 }
 
 header ul {
@@ -36,39 +51,27 @@ header li, header a {
     justify-content: flex-end;
 }
 
-header a:link {
+header a:link, footer a:link {
     text-decoration: none;
 }
 
-header a:visited {
+header a:visited, footer a:visited {
     color: lightblue;
     text-decoration: none;
 }
 
-header li:hover, header a:hover {
+header li:hover, header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-header a:active {
-
-}
-
-header h2 {
-    position: relative;
-    top: 200px;
-    left:450px;
-    background-color: lightblue;
-    width: 22%;
-    padding-right: 2%;
-    margin: 30px 80px;
-    font-size: 32px;
-    text-align: center;
-    z-index: 1
+header a:active, footer a:active {
+    color: black;
 }
 
 header img {
     height: 200px;
-    width: 100%;
+    width: 98%;
+    margin: 0px 15px;
 }
 
 section {
@@ -78,7 +81,12 @@ section {
     margin-top: 25px;
 }
 
-.title {
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title1 {
     width: 25%;
     height: 150px;
     border-right: 10px solid black;
@@ -88,6 +96,7 @@ section {
     padding: 25px 35px 25px 25px;
     margin: 0px 25px;
     background-color: lightblue;
+    justify-content: flex-end;
 }
 
 .content {
@@ -104,8 +113,17 @@ main {
     margin-top: 25px;
 }
 
-.projects {
+.title2 {
+    width: 25%;
     height: 800px;
+    border-right: 10px solid black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    padding: 25px 35px 25px 25px;
+    margin: 0px 25px;
+    background-color: lightblue;
+    justify-content: flex-end;
 }
 
 footer {
@@ -113,4 +131,30 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.title3 {
+    width: 25%;
+    height: 50px;
+    border-right: 10px solid black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    padding: 25px 35px 25px 25px;
+    margin: 0px 25px;
+    background-color: lightblue;
+    justify-content: flex-end;
+}
+
+div h3 {
+    color: lightblue;
+    margin: 10px 15px 10px 0px;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 a {
+    text-decoration: none;
 }
