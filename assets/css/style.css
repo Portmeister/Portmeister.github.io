@@ -25,7 +25,7 @@ header h2 {
     top: 200px;
     left:450px;
     background-color: lightblue;
-    width: 22%;
+    width: 20%;
     padding-right: 2%;
     margin: 30px 70px;
     font-size: 32px;
@@ -49,6 +49,16 @@ header li, header a {
     padding-top: 2%;
     margin-left: 25px;
     justify-content: flex-end;
+}
+
+header a {
+    background-color: black;
+    border: 3px solid lightblue;
+}
+
+div p {
+    text-indent: 50px;
+    text-align: justify;
 }
 
 header a:link, footer a:link {
@@ -96,6 +106,7 @@ div {
     padding: 25px 35px 25px 25px;
     margin: 0px 25px;
     background-color: lightblue;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -104,6 +115,7 @@ div {
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
+    display: flex;
 }
 
 main {
@@ -115,7 +127,7 @@ main {
 
 .title2 {
     width: 22%;
-    height: 800px;
+    height: 1000px;
     border-right: 10px solid black;
     font-size: 50px;
     font-weight: bold;
@@ -123,6 +135,7 @@ main {
     padding: 25px 35px 25px 25px;
     margin: 0px 25px;
     background-color: lightblue;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -144,16 +157,49 @@ footer {
     padding: 25px 35px 25px 25px;
     margin: 0px 25px;
     background-color: lightblue;
+    display: flex;
     justify-content: flex-end;
 }
 
-div h3 {
+.big h3 {
+    position: relative;
+    bottom: 200px;
+    right: 0px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    padding-right: 2%;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1
+}
+
+.small h3 {
+    position: relative;
+    bottom: 100px;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+    padding-right: 2%;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1
+}
+
+div h4 {
+    background-color: black;
     color: lightblue;
+    border: 3px solid lightblue;
     margin: 10px 15px 10px 0px;
-    padding: 10px 5px 10px 20px;
+    padding: 10px 5px 10px 10px;
     font-size: 25px;
     font-weight: bold;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 h3 a {
