@@ -3,34 +3,38 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
-    width: 100%
-    padding: 10px 20px;
+    flex-shrink: 1;
+    height: 350px;
+    width: 98vw;
+
 }
 
 header h1 {
     background-color: lightblue;
-    width: 22%;
+    width: 22vw;
+    height: 18%;
     padding-right: 2%;
     margin: 30px 5px 30px 25px;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     text-align: right;
 }
 
 header h2 {
-    position: relative;
-    top: 200px;
-    left:450px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
     background-color: lightblue;
     width: 20%;
-    padding-right: 2%;
+    padding: 1%;
     margin: 30px 70px;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
+    flex-shrink: inherit;
     z-index: 1
 }
 
@@ -39,6 +43,8 @@ header ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    position: absolute;
+    right: 0%;
 }
 
 header li, header a {
@@ -54,11 +60,6 @@ header li, header a {
 header a {
     background-color: black;
     border: 3px solid lightblue;
-}
-
-div p {
-    text-indent: 50px;
-    text-align: justify;
 }
 
 header a:link, footer a:link {
@@ -79,15 +80,25 @@ header a:active, footer a:active {
 }
 
 header img {
+    position: absolute;
+    bottom: 0%;
     height: 200px;
-    width: 98%;
+    width: 97vw;
     margin: 0px 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    width: 98vw;
+    margin-top: 25px;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: inherit;
     margin-top: 25px;
 }
 
@@ -118,11 +129,9 @@ div {
     display: flex;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 25px;
+.content p {
+    text-indent: 50px;
+    text-align: justify;
 }
 
 .title2 {
@@ -135,14 +144,13 @@ main {
     padding: 25px 35px 25px 25px;
     margin: 0px 25px;
     background-color: lightblue;
-    display: flex;
-    justify-content: flex-end;
 }
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-shrink: 1;
+    width: 98vw;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -161,10 +169,14 @@ footer {
     justify-content: flex-end;
 }
 
-.big h3 {
+.big {
     position: relative;
-    bottom: 200px;
-    right: 0px;
+}
+
+.big h3 {
+    position: absolute;
+    bottom: 40%;
+    left: 0px;
     width: 150px;
     height: 75px;
     background-color: lightblue;
@@ -176,10 +188,14 @@ footer {
     z-index: 1
 }
 
-.small h3 {
+.small {
     position: relative;
-    bottom: 100px;
-    right: 0px;
+}
+
+.small h3 {
+    position: absolute;
+    bottom: 40%;
+    right: 0%;
     width: 100px;
     height: 50px;
     background-color: lightblue;
@@ -204,4 +220,136 @@ div h4 {
 
 h3 a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1394px) {
+    
+    footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .title1 {
+        width: 96vw;
+        height: 8%;
+        font-size: 40px;
+        text-align: center;
+        padding: 1%;
+        margin: 0px 25px;
+        background-color: lightblue;
+        justify-content: center;
+    }
+    
+    .title2 {
+        width: 96vw;
+        height: 8%;
+        font-size: 40px;
+        text-align: center;
+        padding: 1%;
+        margin: 0px 25px;
+        background-color: lightblue;
+    }
+
+    .title3 {
+        width: 96vw;
+        height: 8%;
+        font-size: 40px;
+        text-align: center;
+        padding: 1%;
+        margin: 0px 25px;
+        background-color: lightblue;
+        justify-content: center;
+    }
+
+    .content {
+        width: 96vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div h4 {
+        width: 96vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 928px) {
+    
+    header h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    header {
+        height: 545px;
+    }
+    
+    header h1 {
+        width: 100vw;
+        margin: 2% 0% 2% 2%;
+        padding: 1%;
+        height: 8%;
+        text-align: center;
+    }
+    
+    header ul {
+        flex-direction: column;
+        top: 11%;
+        left:0%;
+        margin: 2%;
+    }
+
+    header li, header a {
+        width: 96vw;
+        margin: 0%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 752px) {
+    
+    header {
+        height: 525px;
+    }
+}
+
+@media only screen and (max-width: 662px) {
+    
+    header {
+        height: 510px;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+    
+    header h2 {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    
+    header {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    header {
+        height: 490px;
+    }
 }
