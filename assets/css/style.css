@@ -6,7 +6,6 @@ header {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 1;
     height: 350px;
     width: 98vw;
 
@@ -90,7 +89,6 @@ header img {
 main {
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 2;
     width: 98vw;
     margin-top: 25px;
 }
@@ -149,7 +147,6 @@ div {
 footer {
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 1;
     width: 98vw;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -171,6 +168,7 @@ footer {
 
 .big {
     position: relative;
+    display: flex;
 }
 
 .big h3 {
@@ -190,12 +188,13 @@ footer {
 
 .small {
     position: relative;
+    display: flex;
 }
 
 .small h3 {
     position: absolute;
     bottom: 40%;
-    right: 0%;
+    left: 0%;
     width: 100px;
     height: 50px;
     background-color: lightblue;
@@ -220,13 +219,21 @@ div h4 {
 
 h3 a {
     text-decoration: none;
-}
+} 
 
-@media only screen and (max-width: 1394px) {
-    
+@media only screen and (max-width: 1400px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        width: inherit;
+        margin-top: 25px;
+    }
+
     footer {
         flex-direction: column;
         flex-wrap: nowrap;
+        width: 95vw;
+        margin-top;: 2%:
     }
 }
 
@@ -237,10 +244,11 @@ h3 a {
         height: 8%;
         font-size: 40px;
         text-align: center;
-        padding: 1%;
+        padding: 2%;
         margin: 0px 25px;
         background-color: lightblue;
         justify-content: center;
+        align-items: center;
     }
     
     .title2 {
@@ -251,10 +259,11 @@ h3 a {
         padding: 1%;
         margin: 0px 25px;
         background-color: lightblue;
+        align-items: center;
     }
 
     .title3 {
-        width: 96vw;
+        width: 95vw;
         height: 8%;
         font-size: 40px;
         text-align: center;
@@ -262,6 +271,7 @@ h3 a {
         margin: 0px 25px;
         background-color: lightblue;
         justify-content: center;
+        align-items: center;
     }
 
     .content {
@@ -276,6 +286,7 @@ h3 a {
         text-align: center;
     }
 }
+
 
 @media only screen and (max-width: 928px) {
     
