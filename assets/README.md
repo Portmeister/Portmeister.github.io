@@ -38,4 +38,4 @@ The following animation shows the web application's appearance and functionality
 ![portfolio demo](/assets/images/02-advanced-css-homework-demo.gif)
 
 Contributors:
-- Source Code provided by Carrol W. Porter (Portmeister)
+- Source Code provided by Carrol W. Porter (Portmeister), demo.gif provided by Trilogy Education Services.
