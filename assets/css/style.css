@@ -169,6 +169,14 @@ footer {
 .big {
     position: relative;
     display: flex;
+    width: 75vw;
+}
+
+.big img {
+    width: 90%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
 }
 
 .big h3 {
