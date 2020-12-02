@@ -43,7 +43,7 @@ header ul {
     flex-wrap: wrap;
     margin-top: 20px;
     position: absolute;
-    right: 0%;
+    right: 2%;
 }
 
 header li, header a {
@@ -125,6 +125,7 @@ div {
     font-size: 20px;
     font-weight: bold;
     display: flex;
+    justify-content: center;
 }
 
 .content p {
@@ -169,12 +170,12 @@ footer {
 .big {
     position: relative;
     display: flex;
-    width: 75vw;
+    width: 60vw;
 }
 
 .big img {
     width: 100%;
-    height: 95%;
+    height: 90%;
     justify-content: center;
     align-items: center;
 }
@@ -182,7 +183,7 @@ footer {
 .big h3 {
     position: absolute;
     bottom: 40%;
-    left: 0px;
+    right: 0px;
     width: 150px;
     height: 75px;
     background-color: lightblue;
@@ -197,11 +198,12 @@ footer {
 .small {
     position: relative;
     display: flex;
+    margin: 0px 30px 10px 0px;
 }
 
 .small img {
-    width: 100%;
-    height: 95%;
+    width: 380px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
@@ -230,6 +232,14 @@ div h4 {
     font-size: 25px;
     font-weight: bold;
     justify-content: center;
+}
+
+h4 a:link {
+    color: lightblue;
+}
+
+h4 a:visited {
+    color: lightblue;
 }
 
 h3 a {
