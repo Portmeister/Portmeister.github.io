@@ -121,11 +121,11 @@ div {
 
 .content {
     width: 65%;
-    padding: 20px;
     font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .content p {
@@ -135,7 +135,6 @@ div {
 
 .title2 {
     width: 22%;
-    height: 1000px;
     border-right: 10px solid black;
     font-size: 50px;
     font-weight: bold;
@@ -147,7 +146,6 @@ div {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
     width: 98vw;
     margin-top: 25px;
     margin-bottom: 25px;
