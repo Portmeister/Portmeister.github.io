@@ -8,7 +8,6 @@ header {
     flex-wrap: wrap;
     height: 350px;
     width: 98vw;
-
 }
 
 header h1 {
@@ -78,8 +77,18 @@ header a:active, footer a:active {
     color: black;
 }
 
-header img {
+header div {
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+    width: 95%;
+}
+
+header div img {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 1%;
     bottom: 0%;
     height: 200px;
     width: 97vw;
